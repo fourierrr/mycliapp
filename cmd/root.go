@@ -31,8 +31,7 @@ import (
 var rootCmd = &cobra.Command{
 	Use:   "mycliapp",
 	Short: "A samll cli-app that show current time coding by golang",
-	Long: `A cli-app will show current time, just for test the package 'cobra', and try releas
-	this app in github`,
+	Long:  `A cli-app will show current time, just for test the package 'cobra', and try releas this app in github`,
 	// Uncomment the following line if your bare application
 	// has an action associated with it:
 	// Run: func(cmd *cobra.Command, args []string) { },
