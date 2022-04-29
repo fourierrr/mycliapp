@@ -14,16 +14,11 @@ import (
 // timeCmd represents the time command
 var timeCmd = &cobra.Command{
 	Use:   "time",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "show current time",
+	Long:  `show current time in two different format `,
 	Run: func(cmd *cobra.Command, args []string) {
 		if flag, _ := cmd.Flags().GetBool("str"); flag {
-			fmt.Println(time.Now.Format("2006-01-02"))
+			fmt.Println(time.Now().Format("2006-01-02"))
 			return
 		}
 		fmt.Println(time.Now())

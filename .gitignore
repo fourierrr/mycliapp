@@ -1,0 +1,11 @@
+dist
+.idea
+release
+
+# Directory Cache Files
+.DS_Store
+thumbs.db
+
+mycliapp
+
+dist/
